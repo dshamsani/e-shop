@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.container {
+    display: grid;
+    grid-template-areas: "image name"      "image description"  "image info"
+    "image addToCart";
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows:  200px 110px 80px;
+    column-gap: 95px;
+    row-gap: 2px;
+}
+
+.productDetail {
+    &_image {
+        grid-area: image;
+    }
+    &_name {
+        grid-area: name;
+    }
+    &_description {
+        grid-area: description;
+    }
+    &_info {
+        grid-area: info;
+    }
+    &_addToCart {
+        grid-area: addToCart;
+    }
+}

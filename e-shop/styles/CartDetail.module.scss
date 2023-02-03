@@ -1,0 +1,101 @@
+.productInfo {
+	border-bottom: 1px solid #d5d9cb;
+}
+
+.cartDetail {
+	display: grid;
+	grid-template-columns: 0.7fr 0.3fr;
+	column-gap: 2em;
+}
+
+
+.cartItem {
+	display: grid;
+	grid-template-areas: "image name basicPrice quantity totalPrice delete";
+	grid-template-columns: 100px 160px 60px 100px 120px 40px;
+	column-gap: 35px;
+	border-bottom: 1px solid #d5d9cb;
+	&_image {
+		grid-area: image;
+	}
+	&_name {
+		grid-area: name;
+	}
+	&_basicPrice {
+		grid-area: basicPrice;
+	}
+	&_quantity {
+		grid-area: quantity;
+	}
+	&_totalPrice {
+		grid-area: totalPrice;
+	}
+	&_delete {
+		grid-area: delete;
+	}
+}
+
+.cartDetailMobile {
+	display: grid;
+	grid-template-columns:  1fr;
+	column-gap: 2em;
+}
+
+.cartItemMobile {
+	display: grid;
+	grid-template-areas: "image name basicPrice quantity totalPrice delete";
+	grid-template-columns: 100px 1fr 0.5fr 1fr 0.5fr 42px;
+	column-gap: 35px;
+	border-bottom: 1px solid #d5d9cb;
+}
+
+.cartProductMobile {
+	display: grid;
+	grid-template-areas: 
+	"image name         delete"
+	"image basicPrice   ."
+	"image quantity     ."
+	"image totalPrice   .";
+	column-gap: 20px;
+	row-gap: 10px;
+	grid-template-columns: 100px 1fr 14px;
+	&_image {
+		grid-area: image;
+	}
+	&_name {
+		grid-area: name;
+	}
+	&_basicPrice {
+		grid-area: basicPrice;
+	}
+	&_quantity {
+		grid-area: quantity;
+	}
+	&_totalPrice {
+		grid-area: totalPrice;
+	}
+	&_delete {
+		grid-area: delete;
+	}
+}
+
+.form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 75px;
+	row-gap: 8px;
+	grid-template-rows: repeat(2, 85px);
+	grid-auto-rows: 85px;
+	grid-auto-flow: row;
+	margin-top: 1em;
+}
+
+.formMobile {
+	display: grid;
+	grid-template-columns: 1fr;
+	column-gap: 75px;
+	grid-template-rows: repeat(2, 85px);
+	grid-auto-rows: 85px;
+	grid-auto-flow: row;
+	margin-top: 1em;
+}

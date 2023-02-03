@@ -1,0 +1,18 @@
+
+.container {
+    display: grid;
+    grid-template-areas: "first second" "first third";
+    grid-template-columns: 1fr 0.28fr;
+    grid-template-rows: 380px 380px;
+    &_firstElement {
+        grid-area: first;
+        margin-right: 15px !important;
+        padding-bottom: 15px !important;
+        grid-area: first;
+        margin-right: 15px !important;
+        padding-bottom: 15px !important;
+    }
+    &_otherElements {
+        grid-area: second;
+    }
+}

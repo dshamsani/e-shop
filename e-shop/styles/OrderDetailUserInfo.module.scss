@@ -1,0 +1,24 @@
+.userInfo {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "name surname"
+			   			 "email mobile"
+			   			 "adress adress";
+	row-gap: 16px;
+    margin-top: 1em;
+	&_name {
+		grid-area: name;
+	}
+	&_surname {
+		grid-area: surname;
+	}
+	&_email {
+		grid-area: email;
+	}
+	&_mobile {
+		grid-area: mobile;
+	}
+	&_adress {
+		grid-area: adress;
+	}
+}

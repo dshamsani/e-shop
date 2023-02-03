@@ -1,0 +1,14 @@
+
+.section {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 260px 49px;
+		grid-template-areas: "image" "name";
+		&_image {
+		grid-area: image;
+			position: relative;
+		}
+		&_name {
+			grid-area: name;
+		}
+}

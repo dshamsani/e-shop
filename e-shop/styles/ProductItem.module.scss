@@ -1,0 +1,24 @@
+
+
+.productItem {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 283px 95px 90px;
+    grid-template-areas: "image" "name" "cartInfo";
+    &_image {
+        grid-area: image;
+        position: relative;
+    }
+    &_name {
+        grid-area: name;
+    }
+    &_cartInfo {
+        grid-area: cartInfo;
+    }
+}
+
+.addToCartBar {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    column-gap: 8px;
+}
